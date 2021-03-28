@@ -19,7 +19,7 @@ export class About extends Component {
         EdX.org in Data Science with Python.
       </p>
     </React.Fragment>
-  );
+  );//
   render() {
     return (
       <div>
