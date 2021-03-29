@@ -283,7 +283,6 @@ const Piano = () => {
       id={note}
     >
       {color === "white" ? <p id="whiteNoteName">{label}</p> : label}
-      {/*  {onlyDesktop ? null : keys.filter(key => !(mobile && key.onlyDesktop))} */}
     </div>
   ));
 

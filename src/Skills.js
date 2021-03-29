@@ -25,7 +25,7 @@ export class Skills extends Component {
                 and use appealing color palettes.
               </p>
               <p id="subheaders">
-                <strong>Things I enjoy designing:</strong>
+                <strong>Designing Specialties:</strong>
               </p>
               <p>UX, UI, Web, Apps</p>
               <p id="subheaders">
