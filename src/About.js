@@ -19,10 +19,10 @@ export class About extends Component {
         EdX.org in Data Science with Python.
       </p>
     </React.Fragment>
-  );//
+  ); //
   render() {
     return (
-      <div>
+      <div id="aboutDiv">
         <Bounce bottom>
           <div id="div1">
             <h2 id="bioGreet">Hi, I'm Joe. </h2>

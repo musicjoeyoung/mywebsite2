@@ -30,7 +30,6 @@ const Piano = () => {
   const [congratulations, setCongratulations] = useState(null);
   const keyCodeNumbers = {
     90: "C2",
-    83: "Db2",
     88: "D2",
     68: "Eb2",
     67: "E2",
@@ -276,7 +275,7 @@ const Piano = () => {
     { note: "B4", label: "", color: "white" },
   ];
 
-  const keyboard = keys.map(({ note, label, color }) => (
+  const keyboard = keys.map(({ note, label, color, onlyDesktop }) => (
     <div
       key={`unique${note}`}
       className={`${color}-key`}
@@ -284,8 +283,10 @@ const Piano = () => {
       id={note}
     >
       {color === "white" ? <p id="whiteNoteName">{label}</p> : label}
+      {/*  {onlyDesktop ? null : keys.filter(key => !(mobile && key.onlyDesktop))} */}
     </div>
   ));
+
   return (
     <div className="pianoOuterDiv">
       {/* <button onClick={playTune}>play</button> */}

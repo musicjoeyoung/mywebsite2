@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 html,
 body,
 #root {
@@ -32,11 +33,6 @@ p {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 a,
 a:hover,
 a:focus,
@@ -108,7 +104,7 @@ a:active {
   text-align: center;
   padding: 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.6vw;
 }
 
 #links a:hover {
@@ -628,7 +624,7 @@ h1 {
 }
 h2 {
   color: #888;
-  font-size: 2em;
+  font-size: 3vw;
 }
 #name {
   opacity: 0;
@@ -948,4 +944,187 @@ h3 {
   margin: 0em 0;
   text-align: center;
   font-size: 5vw;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    display: contents;
+  }
+  .dropdown {
+    display: none;
+  }
+  #div1 {
+    max-width: fit-content;
+    margin: auto;
+    padding: initial;
+    margin-top: initial;
+    text-align: justify;
+    z-index: -1;
+    background-color: #284b63ad;
+    box-shadow: 10px 10px 8px 8px black;
+    /* min-height: 200px; */
+    border-radius: 20px;
+  }
+  #aboutDiv {
+    display: contents;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  #bio {
+    padding-left: initial;
+    padding-right: initial;
+    background-color: #eef1ef;
+    width: auto;
+    animation: fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 3s;
+    animation-fill-mode: forwards;
+    background: #fff;
+    border-radius: 20px;
+  }
+  #bioText {
+    padding: 22px;
+    color: #284b63;
+    font: 400 15px/1.8 "Raleway", sans-serif;
+    font-size: 4.4vw;
+    text-align: left;
+  }
+  #bioGreet {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+  }
+  .modal-button {
+    padding: initial;
+    margin-left: initial;
+    margin-top: initial;
+    min-width: initial;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 1.15s ease-out;
+    /* margin: auto; */
+    width: 42%;
+    margin-left: 22vw;
+  }
+  .modal-area {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    padding: 2.5em 1.5em 1.5em 1.5em;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 3px rgb(0 0 0 / 10%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 10px 10px 8px 8px #000000;
+    border-radius: 2%;
+    color: #284b63;
+    animation: fadeIn cubic-bezier(0.4, 0, 1, 1) 2s;
+    animation-fill-mode: forwards;
+    /* font-size: 3vw; */
+  }
+  #modalText {
+    font-size: initial;
+    line-height: 6vw;
+  }
+  #span2 {
+    font-size: initial;
+  }
+  .flex-grid-thirds {
+    display: flow-root;
+    /* justify-content: space-evenly; */
+    margin-top: 9%;
+    margin-bottom: 9%;
+    background-color: #3c6e71d1;
+    /* min-height: 590px; */
+    padding-top: 68px;
+    padding-bottom: 68px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px 8px black;
+    /* max-width: 90%; */
+    /* margin: auto; */
+  }
+  .flex-grid-thirds .col {
+    width: initial;
+    border: 2px solid white;
+    min-height: initial;
+    background: #fff;
+    border-radius: 20px;
+    animation: fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 3s;
+    animation-fill-mode: forwards;
+    margin-bottom: 4vw;
+  }
+  h3 {
+    color: rgb(25, 84, 107);
+    font-size: 3.8vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  #span1 {
+    font-size: initial;
+  }
+  #div2 {
+    max-width: initial;
+    margin: initial;
+  }
+  .container {
+    position: relative;
+    margin-left: 0%;
+    margin-right: 15%;
+  }
+  .imgCarouselText {
+    font-size: 4vw;
+  }
+  #div3 {
+    font: 400 15px/1.8 "Raleway", sans-serif;
+    background-color: #686c79c7;
+    padding: 35px 9px;
+    text-align: justify;
+    box-shadow: 10px 10px 8px 8px #000000;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    margin-bottom: initial;
+    max-width: initial;
+    margin: initial;
+  }
+  .pianoOuterDiv {
+    margin: initial;
+    width: initial;
+  }
+  #pianoModal {
+    float: right;
+  }
+  .pianoPage {
+    display: flex;
+    margin: initial;
+    width: initial;
+    padding-bottom: 5%;
+  }
+  #note {
+    display: none;
+  }
+  #links {
+    position: initial;
+  }
+  #links a {
+    font-size: 3.6vw;
+  }
+  .footer {
+    background: none;
+    width: 100%;
+    min-height: 5%;
+    position: initial;
+    margin: initial;
+    padding: none;
+    color: white;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  #enter {
+    font-size: 5vw;
+  }
 }
