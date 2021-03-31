@@ -123,6 +123,7 @@ const Piano = () => {
     keyE3White();
     keyG3White();
     notes.length = 0;
+    clickStart = false;
   }
 
   function keepTrack(note) {
@@ -139,7 +140,7 @@ const Piano = () => {
       const lastNote = lastNoteIndex === maryHadALittleLamb.length - 1;
 
       if (lastNote) {
-        return setCongratulations("Well done!");
+        return setCongratulations("Well done!") && note.length === 0;
       }
 
       const nextNote = maryHadALittleLamb[lastNoteIndex + 1];
@@ -274,8 +275,8 @@ const Piano = () => {
     { note: "Bb4", label: "", color: "black" },
     { note: "B4", label: "", color: "white" },
   ];
-
-  const keyboard = keys.map(({ note, label, color, onlyDesktop }) => (
+  //const mobile = { "max-width": "600px" };
+  const keyboard = keys.map(({ note, label, color /* onlyDesktop */ }) => (
     <div
       key={`unique${note}`}
       className={`${color}-key`}
