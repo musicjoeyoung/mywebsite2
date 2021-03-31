@@ -68,7 +68,8 @@ export class HeaderTitle extends Component {
           type="text/css"
         />
         <h1 id="homePageName">
-          Joseph M. Young:{" "}
+          Joseph M. Young:
+          <br />{" "}
           <span
             id="homePageWords"
             className="txt-rotate"

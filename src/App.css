@@ -1075,9 +1075,21 @@ h3 {
     position: relative;
     margin-left: 0%;
     margin-right: 15%;
+    margin-bottom: 75vw;
   }
   .imgCarouselText {
     font-size: 4vw;
+    margin-top: 34vw;
+    margin-left: -7vw;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: initial;
+    transform: initial;
+    text-align: initial;
+    width: 189%;
+    height: 50%;
   }
   #div3 {
     font: 400 15px/1.8 "Raleway", sans-serif;
@@ -1105,7 +1117,7 @@ h3 {
     float: none;
     margin-top: none;
     margin-right: none;
-    box-shadow: 1px 2px 35px 17px #ffeb3b;
+    box-shadow: 1px 2px 35px 17px #ffeb3b00;
     width: 50%;
     margin: auto;
     background-color: white;
@@ -1141,5 +1153,12 @@ h3 {
   }
   #enter {
     font-size: 5vw;
+  }
+  #spanDivProjects {
+    margin-top: 11%;
+    margin-bottom: -4%;
+    text-align: start;
+    width: 50%;
+    margin: auto;
   }
 }
