@@ -7,7 +7,7 @@ import * as Tone from "tone";
 }
 function keyE3NotPlaying() {
   const E3 = document.getElementById("E3");
-  E3.style.backgroundColor = "white";
+  E3.style.removeProperty('background');
 }
 function keyD3Playing() {
   const D3 = document.getElementById("D3");
@@ -16,7 +16,7 @@ function keyD3Playing() {
 }
 function keyD3NotPlaying() {
   const D3 = document.getElementById("D3");
-  D3.style.backgroundColor = "white";
+  D3.style.removeProperty('background');
 }
 function keyC3Playing() {
   const C3 = document.getElementById("C3");
@@ -25,7 +25,7 @@ function keyC3Playing() {
 }
 function keyC3NotPlaying() {
   const C3 = document.getElementById("C3");
-  C3.style.backgroundColor = "white";
+  C3.style.removeProperty('background');
 }
 function keyG3Playing() {
   const G3 = document.getElementById("G3");
@@ -34,7 +34,7 @@ function keyG3Playing() {
 }
 function keyG3NotPlaying() {
   const G3 = document.getElementById("G3");
-  G3.style.backgroundColor = "white";
+  G3.style.removeProperty('background');
 } */
 /* export const playTune = () => {
   setTimeout(() => {
@@ -211,7 +211,7 @@ export function keyE3Yellow() {
 }
 export function keyE3White() {
   const E3 = document.getElementById("E3");
-  E3.style.backgroundColor = "white";
+  E3.style.removeProperty("background");
 }
 export function keyD3Yellow() {
   const D3 = document.getElementById("D3");
@@ -219,7 +219,7 @@ export function keyD3Yellow() {
 }
 export function keyD3White() {
   const D3 = document.getElementById("D3");
-  D3.style.backgroundColor = "white";
+  D3.style.removeProperty("background");
 }
 export function keyC3Yellow() {
   const C3 = document.getElementById("C3");
@@ -227,7 +227,7 @@ export function keyC3Yellow() {
 }
 export function keyC3White() {
   const C3 = document.getElementById("C3");
-  C3.style.backgroundColor = "white";
+  C3.style.removeProperty("background");
 }
 export function keyG3Yellow() {
   const G3 = document.getElementById("G3");
@@ -235,5 +235,5 @@ export function keyG3Yellow() {
 }
 export function keyG3White() {
   const G3 = document.getElementById("G3");
-  G3.style.backgroundColor = "white";
+  G3.style.removeProperty("background");
 }

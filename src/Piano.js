@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as alertify from "alertifyjs";
 import "alertifyjs/build/css/alertify.css";
+import classnames from "classnames";
 
 import {
   /* playTune, */
@@ -125,6 +126,12 @@ const Piano = () => {
     notes.length = 0;
     clickStart = false;
   }
+  /*   .white-key:hover {
+  background-color: rgba(167, 167, 167, 0.726);
+}
+.white-key:active {
+  background-color: yellow;
+} */
 
   function keepTrack(note) {
     const lastNoteIndex = notes.length - 1;
@@ -250,18 +257,18 @@ const Piano = () => {
     { note: "A2", label: "N", color: "white" },
     { note: "Bb2", label: "J", color: "black" },
     { note: "B2", label: "M", color: "white" },
-    { note: "C3", label: "Q", color: "white" },
-    { note: "Db3", label: "2", color: "black" },
-    { note: "D3", label: "W", color: "white" },
-    { note: "Eb3", label: "3", color: "black" },
-    { note: "E3", label: "E", color: "white" },
-    { note: "F3", label: "R", color: "white" },
-    { note: "Gb3", label: "5", color: "black" },
-    { note: "G3", label: "T", color: "white" },
-    { note: "Ab3", label: "6", color: "black" },
-    { note: "A3", label: "Y", color: "white" },
-    { note: "Bb3", label: "7", color: "black" },
-    { note: "B3", label: "U", color: "white" },
+    { note: "C3", label: "Q", color: "white", className: "mobile" },
+    { note: "Db3", label: "2", color: "black", className: "mobile" },
+    { note: "D3", label: "W", color: "white", className: "mobile" },
+    { note: "Eb3", label: "3", color: "black", className: "mobile" },
+    { note: "E3", label: "E", color: "white", className: "mobile" },
+    { note: "F3", label: "R", color: "white", className: "mobile" },
+    { note: "Gb3", label: "5", color: "black", className: "mobile" },
+    { note: "G3", label: "T", color: "white", className: "mobile" },
+    { note: "Ab3", label: "6", color: "black", className: "mobile" },
+    { note: "A3", label: "Y", color: "white", className: "mobile" },
+    { note: "Bb3", label: "7", color: "black", className: "mobile" },
+    { note: "B3", label: "U", color: "white", className: "mobile" },
     { note: "C4", label: "I", color: "white" },
     { note: "Db4", label: "9", color: "black" },
     { note: "D4", label: "O", color: "white" },
@@ -276,16 +283,22 @@ const Piano = () => {
     { note: "B4", label: "", color: "white" },
   ];
   //const mobile = { "max-width": "600px" };
-  const keyboard = keys.map(({ note, label, color /* onlyDesktop */ }) => (
-    <div
-      key={`unique${note}`}
-      className={`${color}-key`}
-      onClick={playNote}
-      id={note}
-    >
-      {color === "white" ? <p id="whiteNoteName">{label}</p> : label}
-    </div>
-  ));
+  const keyboard = keys.map(
+    ({ elementIsActive, note, label, color, className /* onlyDesktop */ }) => (
+      <div
+        key={`unique${note}`}
+        className={classnames(`${color}-key`, className)}
+        /*className={classnames(`${color}-key`, {
+          mobile: className === "mobile",
+          "active": elementIsActive,
+        })}*/
+        onClick={playNote}
+        id={note}
+      >
+        {color === "white" ? <p id="whiteNoteName">{label}</p> : label}
+      </div>
+    )
+  );
 
   return (
     <div className="pianoOuterDiv">

@@ -9,11 +9,10 @@ export class ErrorNotFound extends Component {
         <h2>404</h2>
         <h4>
           We're sorry the page you were looking for doesn't exist. <br />
-          This page is empty...{" "}
-          <br/>
-          <br/>
-          I mean...<br/>
-          technically it's NOT empty. There's this cute little cat who's sad he has no more food.
+          This page is empty... <br />
+          <br />
+          As an apology...
+          <br />I will let you hire me.
         </h4>
         <a href="/mainpage">
           <h2 id="enter">Come back home!</h2>
