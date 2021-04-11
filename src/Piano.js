@@ -282,23 +282,25 @@ const Piano = () => {
     { note: "Bb4", label: "", color: "black" },
     { note: "B4", label: "", color: "white" },
   ];
-  //const mobile = { "max-width": "600px" };
-  const keyboard = keys.map(
-    ({ elementIsActive, note, label, color, className /* onlyDesktop */ }) => (
-      <div
-        key={`unique${note}`}
-        className={classnames(`${color}-key`, className)}
-        /*className={classnames(`${color}-key`, {
+
+  const keyboard = keys.map(({ note, label, color, className }) => (
+    <div
+      key={`unique${note}`}
+      className={classnames(`${color}-key`, className)}
+      /*className={classnames(`${color}-key`, {
           mobile: className === "mobile",
           "active": elementIsActive,
         })}*/
-        onClick={playNote}
-        id={note}
-      >
-        {color === "white" ? <p id="whiteNoteName">{label}</p> : label}
-      </div>
-    )
-  );
+      onClick={playNote}
+      id={note}
+    >
+      {color === "white" ? (
+        <p id="whiteNoteName">{label}</p>
+      ) : (
+        <p id="blackNoteName">{label}</p>
+      )}
+    </div>
+  ));
 
   return (
     <div className="pianoOuterDiv">

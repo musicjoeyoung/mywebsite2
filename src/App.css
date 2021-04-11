@@ -955,9 +955,11 @@ h3 {
     display: none;
   }
   .white-key:not(.mobile),
-  .black-key:not(.mobile) {
+  .black-key:not(.mobile),
+  p:not(.mobile) {
     display: none;
   }
+
   #div1 {
     max-width: fit-content;
     margin: auto;
