@@ -730,7 +730,7 @@ h2 {
   z-index: 2;
   border-radius: 4px;
   color: white;
-  font-size: 12px;
+  font-size: inherit;
   text-align: center;
 }
 .black-key:hover {
@@ -946,6 +946,10 @@ h3 {
   font-size: 5vw;
 }
 
+#blackNoteName {
+  margin-top: 0vw;
+  font-size: 1vw;
+}
 @media (max-width: 600px) {
   html,
   body {
@@ -956,7 +960,8 @@ h3 {
   }
   .white-key:not(.mobile),
   .black-key:not(.mobile),
-  p:not(.mobile) {
+  #whiteNoteName:not(.mobile),
+  #blackNoteName:not(.mobile) {
     display: none;
   }
 
