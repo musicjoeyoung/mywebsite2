@@ -96,8 +96,9 @@ export class Skills extends Component {
               </p>
               <p>
                 •Building the official website for the 78th Army Band, Fort Dix,
-                NJ. •Working with a team of developers to create an employment
-                app for freelance software engineers.
+                NJ. <br />
+                •Working with a team of developers to create an employment app
+                for freelance software engineers.
               </p>
             </div>
           </div>
