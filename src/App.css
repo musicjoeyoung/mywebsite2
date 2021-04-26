@@ -87,6 +87,9 @@ a:active {
 #logo {
   /* margin-top: 0vw; */
   width: 22vw;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 7s;
+  animation-fill-mode: forwards;
 }
 #links {
   position: fixed;
