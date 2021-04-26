@@ -67,7 +67,7 @@ export class Skills extends Component {
               <p id="subheaders">
                 <strong>Basic:</strong>
               </p>
-              <p>Angular & Typescript</p>
+              <p>Angular, Typescript, MongoDB, GraphQL, Stepzen</p>
             </div>
             <div className="col">
               <img src={teamwork} id="teamwork" alt="" />

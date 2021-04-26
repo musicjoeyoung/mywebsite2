@@ -55,8 +55,11 @@ class MainPage extends Component {
 
           <div className="bgimg-3">
             <div className="caption" id="spanContactForm">
-              <span className="border" id="span2">
-                SAY HELLO!
+              <span className="border" id="span3">
+                QUESTIONS? 
+                COMMENTS? 
+                OR JUST SAY HELLO!
+                
               </span>
             </div>
           </div>

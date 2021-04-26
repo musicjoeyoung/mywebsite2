@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "./img/logo.png";
 
 export default function Navbar() {
   let prevScrollpos = window.pageYOffset;
@@ -20,6 +21,7 @@ export default function Navbar() {
 
         <a href="#spanContactForm"> Contact</a>
       </div>
+      <img src={logo} alt="" id="logo" />
     </div>
   );
 }

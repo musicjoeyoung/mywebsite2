@@ -84,6 +84,10 @@ a:active {
 
   margin: auto;
 }
+#logo {
+  /* margin-top: 0vw; */
+  width: 22vw;
+}
 #links {
   position: fixed;
   top: 0;
@@ -250,6 +254,15 @@ a {
   min-height: 200px;
 }
 #span2 {
+  font: 400 15px/1.8 "Raleway", sans-serif;
+  text-align: center;
+  padding: 18px;
+  letter-spacing: 10px;
+  background-color: transparent;
+  font-size: 2vw;
+  color: white;
+}
+#span3 {
   font: 400 15px/1.8 "Raleway", sans-serif;
   text-align: center;
   padding: 18px;
@@ -634,7 +647,7 @@ h2 {
   color: white;
   /* background-color: #3c6e71; */
   border-radius: 10px;
-  font-size: 7vw;
+  font-size: 5vw;
 }
 @keyframes fadeIn {
   0% {
