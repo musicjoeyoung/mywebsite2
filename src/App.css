@@ -821,10 +821,8 @@ h3 {
 .contact-form {
   display: flex;
   flex-direction: column;
-
   margin: auto;
 }
-
 #messageInput {
   margin: 0px;
   height: 143px;

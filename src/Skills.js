@@ -92,14 +92,9 @@ export class Skills extends Component {
                 Master of Arts - Music Composition - Hunter College
               </p>
               <p id="subheaders">
-                <strong>Currrent Collaboration:</strong>
+                <strong>Current Projects:</strong>
               </p>
-              <p>
-                •Building the official website for the 78th Army Band, Fort Dix,
-                NJ. <br />
-                •Working with a team of developers to create an employment app
-                for freelance software engineers.
-              </p>
+              <p>•Website Manager for the 78th Army Band. </p>
             </div>
           </div>
         </Bounce>
