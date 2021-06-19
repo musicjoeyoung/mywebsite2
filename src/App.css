@@ -22,7 +22,7 @@ body {
   color: #aaa;
 }
 p {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 .App {
   text-align: center;
@@ -170,7 +170,7 @@ a {
   max-width: 50%;
   margin: auto;
   padding: 50px 80px;
-  margin-top: 7%;
+  /* margin-top: 7%; */
   text-align: justify;
   z-index: -1;
   background-color: #284b63ad;
@@ -271,7 +271,7 @@ a {
   padding: 18px;
   letter-spacing: 10px;
   background-color: transparent;
-  font-size: 2vw;
+  font-size: 1vw;
   color: white;
 }
 #div4 {
@@ -316,7 +316,7 @@ a {
   padding: 22px;
   color: #284b63;
   font: 400 15px/1.8 "Raleway", sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   text-align: left;
 }
 
@@ -754,10 +754,10 @@ h2 {
 }
 
 .flex-grid-thirds {
-  display: flex;
+  /* display: flex; */
   justify-content: space-evenly;
-  margin-top: 9%;
-  margin-bottom: 9%;
+  /* margin-top: 9%; */
+  /* margin-bottom: 9%; */
   background-color: #3c6e71d1;
   min-height: 590px;
   padding-top: 68px;
@@ -768,27 +768,32 @@ h2 {
   margin: auto;
 }
 .flex-grid-thirds .col {
-  width: 27%;
+  margin: auto;
+  width: 83%;
   border: 2px solid white;
-  min-height: 500px;
+  /* min-height: 500px; */
   background: #fff;
   border-radius: 20px;
-  -webkit-animation: fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 3s;
   animation: fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 3s;
   animation-fill-mode: forwards;
+  /* flex-direction: row-reverse; */
+  margin-bottom: 10px;
 }
 #graphicdesign {
-  height: 13vw;
+  height: 6vw;
+  margin-bottom: -17px;
 }
 #analytics {
-  height: 13vw;
+  height: 6vw;
+  margin-bottom: -17px;
 }
 #teamwork {
-  height: 13vw;
+  height: 6vw;
+  margin-bottom: -17px;
 }
 h3 {
   color: rgb(25, 84, 107);
-  font-size: 1.8vw;
+  /* font-size: 1.8vw; */
 }
 #subheaders {
   color: #5981b3;

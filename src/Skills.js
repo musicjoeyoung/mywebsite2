@@ -31,12 +31,7 @@ export class Skills extends Component {
               <p id="subheaders">
                 <strong>Design Tools:</strong>
               </p>
-              <p>
-                Figma
-                <br /> Excalidraw
-                <br /> Coolors
-                <br /> Sensual Logic PaintMaker{" "}
-              </p>
+              <p>Figma, Excalidraw, Coolors, Sensual Logic PaintMaker </p>
             </div>
             <div className="col">
               <img src={analytics} id="analytics" alt="" />
@@ -50,18 +45,14 @@ export class Skills extends Component {
               </p>
               <p>
                 {" "}
-                Javascript, HTML5, CSS3
-                <br /> React, Node, Express
-                <br /> PostgresQL, Git, REST-ful API’s
-                <br /> Sequelize, Redux
+                Javascript, HTML5, CSS3, React, Node, Express
+                <br /> PostgresQL, Git, REST-ful API’s, Sequelize, Redux
               </p>
               <p id="subheaders">
                 <strong>Competent:</strong>
               </p>
               <p>
-                Tone.js, Three.js, Mocha
-                <br /> Jasmine, SQL, Firebase/Firestore
-                <br />
+                Tone.js, Three.js, Mocha, Jasmine, SQL, Firebase/Firestore,
                 Python
               </p>
               <p id="subheaders">
