@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./img/logo.png";
+//import logo from "./img/logo.png";
 
 export default function Navbar() {
   let prevScrollpos = window.pageYOffset;
@@ -13,15 +13,12 @@ export default function Navbar() {
     prevScrollpos = currentScrollPos;
   };
   return (
-    <div>
-      <div id="links">
-        <a href="#spanDivAbout"> About</a>
-        <a href="#spanDivSkills"> Skills</a>
-        <a href="#spanDivProjects"> Projects</a>
+    <div id="links">
+      <a href="#spanDivAbout"> About</a>
+      <a href="#spanDivSkills"> Skills</a>
+      <a href="#spanDivProjects"> Projects</a>
 
-        <a href="#spanContactForm"> Contact</a>
-      </div>
-      <img src={logo} alt="" id="logo" />
+      <a href="#spanContactForm"> Contact</a>
     </div>
   );
 }
