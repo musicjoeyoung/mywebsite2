@@ -85,7 +85,7 @@ export class Skills extends Component {
               <p id="subheaders">
                 <strong>Current Projects:</strong>
               </p>
-              <p>•Website Manager for the 78th Army Band. </p>
+              <p>Website Manager for the 78th Army Band. </p>
             </div>
           </div>
         </Bounce>

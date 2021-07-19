@@ -1013,17 +1013,18 @@ h3 {
     padding-left: initial;
     padding-right: initial;
     background-color: #eef1ef;
-    width: auto;
+    width: 90%;
     animation: fadeIn cubic-bezier(0.68, -0.55, 0.27, 1.55) 3s;
     animation-fill-mode: forwards;
     background: #fff;
     border-radius: 20px;
+    margin: auto;
   }
   #bioText {
     padding: 22px;
     color: #284b63;
     font: 400 15px/1.8 "Raleway", sans-serif;
-    font-size: 4.4vw;
+    font-size: 3.4vw;
     text-align: left;
   }
   #bioGreet {
@@ -1083,7 +1084,7 @@ h3 {
     /* margin: auto; */
   }
   .flex-grid-thirds .col {
-    width: initial;
+    /* width: initial; */
     border: 2px solid white;
     min-height: initial;
     background: #fff;
@@ -1196,5 +1197,10 @@ h3 {
     text-align: start;
     width: 50%;
     margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  #bioText {
+    font-size: 2.4vw;
   }
 }
