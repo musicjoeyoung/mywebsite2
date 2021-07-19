@@ -85,6 +85,9 @@ a:active {
 
   margin: auto;
 }
+#nameH1 {
+  color: black !important;
+}
 #logo {
   /* margin-top: 0vw; */
   width: 22vw;
@@ -93,17 +96,19 @@ a:active {
   animation-fill-mode: forwards;
 }
 #links {
-  position: fixed;
+  position: sticky;
   top: 0;
   transition: top 0.3s;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
   justify-content: center;
-  /* background-color: #3c6e71d1; */
-  color: white;
-  /* border-radius: 10px; */
+  color: #fff;
   min-width: 85%;
   z-index: 1;
   margin: auto;
+  padding-bottom: 60px;
+  /* margin-top: -30px; */
 }
 
 #links a {
@@ -117,7 +122,7 @@ a:active {
 }
 
 #links a:hover {
-  background-color: #3c6e71d1;
+  /* background-color: #3c6e71d1; */
   border-radius: 7px;
   color: black;
 }
@@ -169,14 +174,14 @@ a {
 }
 
 #div1 {
-  max-width: 50%;
+  /*  max-width: 50%; */
   margin: auto;
   padding: 50px 80px;
   /* margin-top: 7%; */
   text-align: justify;
   z-index: -1;
   background-color: #284b63ad;
-  box-shadow: 10px 10px 8px 8px black;
+  box-shadow: 10px 10px 8px -3px black;
   min-height: 200px;
   border-radius: 20px;
   /*   -webkit-animation: fadeIn ease 2s;
@@ -190,7 +195,7 @@ a {
   text-align: justify;
   z-index: -1;
   background-color: #284b63ad;
-  box-shadow: 10px 10px 8px 8px black;
+  box-shadow: 10px 10px 8px -3px black;
   min-height: 200px;
   border-radius: 20px;
   display: flex;
@@ -226,9 +231,9 @@ a {
 }
 #div2 {
   font: 400 15px/1.8 "Raleway", sans-serif;
-  background-color: #7d98a1c7;
+  background-color: #687e8f7a;
   position: relative;
-  box-shadow: 10px 10px 8px 8px #000000;
+  box-shadow: 10px 10px 8px -3px black;
   border-radius: 20px;
   max-width: 70%;
   margin: auto;
@@ -238,7 +243,7 @@ a {
   background-color: #686c79c7;
   padding: 50px 80px;
   text-align: justify;
-  box-shadow: 10px 10px 8px 8px #000000;
+  box-shadow: 10px 10px 8px -3px black;
   border-radius: 20px;
   padding-bottom: 50px;
   margin-bottom: 70px;
@@ -326,8 +331,7 @@ a {
   height: 350px;
   width: 350px;
   border-radius: 20px;
-  box-shadow: 10px 10px 8px black;
-
+  box-shadow: 10px 10px 8px -3px black;
   /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
   filter: gray; /* IE5+ */
   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
@@ -422,7 +426,7 @@ p.lorem-text {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 10px 10px 8px 8px #000000;
+  box-shadow: 10px 10px 8px -3px black;
   border-radius: 2%;
   color: #284b63;
   -webkit-animation: fadeIn cubic-bezier(0.4, 0, 1, 1) 2s;
@@ -438,7 +442,7 @@ p.lorem-text {
   box-shadow: 0 0 10px 3px rgb(0 0 0 / 10%);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 10px 10px 8px 8px #000000;
+  box-shadow: 10px 10px 8px -3px black;
   border-radius: 2%;
   color: #284b63;
   -webkit-animation: fadeIn cubic-bezier(0.4, 0, 1, 1) 2s;
@@ -505,7 +509,7 @@ p.lorem-text {
 
 .Contact {
   width: 50px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 8px -3px black;
   padding: 12px 16px;
   z-index: 1;
   border-radius: 15px;
@@ -760,13 +764,13 @@ h2 {
   justify-content: space-evenly;
   /* margin-top: 9%; */
   /* margin-bottom: 9%; */
-  background-color: #3c6e71d1;
+  background-color: #7d10108c;
   min-height: 590px;
   padding-top: 68px;
   padding-bottom: 68px;
   border-radius: 20px;
-  box-shadow: 10px 10px 8px 8px black;
-  max-width: 90%;
+  box-shadow: 10px 10px 8px -3px black;
+  /* max-width: 90%; */
   margin: auto;
 }
 .flex-grid-thirds .col {
@@ -870,7 +874,7 @@ h3 {
   object-fit: cover;
   border: 2px;
   border-radius: 5px;
-  box-shadow: 10px 10px 8px 8px #000000;
+  box-shadow: 10px 10px 8px -3px black;
 }
 .sliderimg:hover {
   transform: scale(1.3);
@@ -994,7 +998,7 @@ h3 {
     text-align: justify;
     z-index: -1;
     background-color: #284b63ad;
-    box-shadow: 10px 10px 8px 8px black;
+    box-shadow: 10px 10px 8px -3px black;
     /* min-height: 200px; */
     border-radius: 20px;
     padding-top: 4vw;
@@ -1050,7 +1054,7 @@ h3 {
     box-shadow: 0 0 10px 3px rgb(0 0 0 / 10%);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    box-shadow: 10px 10px 8px 8px #000000;
+    box-shadow: 10px 10px 8px -3px black;
     border-radius: 2%;
     color: #284b63;
     animation: fadeIn cubic-bezier(0.4, 0, 1, 1) 2s;
@@ -1074,7 +1078,7 @@ h3 {
     padding-top: 68px;
     padding-bottom: 68px;
     border-radius: 20px;
-    box-shadow: 10px 10px 8px 8px black;
+    box-shadow: 10px 10px 8px -3px black;
     /* max-width: 90%; */
     /* margin: auto; */
   }
@@ -1128,7 +1132,7 @@ h3 {
     background-color: #686c79c7;
     padding: 35px 9px;
     text-align: justify;
-    box-shadow: 10px 10px 8px 8px #000000;
+    box-shadow: 10px 10px 8px -3px black;
     border-radius: 20px;
     padding-bottom: 50px;
     margin-bottom: initial;

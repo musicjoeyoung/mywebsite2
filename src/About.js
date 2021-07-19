@@ -25,7 +25,7 @@ export class About extends Component {
       <div id="aboutDiv">
         <Bounce bottom>
           <div id="div1">
-            <h2 id="bioGreet">Hi, I'm Joe. </h2>
+            <h2 id="bioGreet">Welcome! </h2>
             <div id="bio">
               <p id="bioText">
                 I'm a software engineer as well as a musician and a member of

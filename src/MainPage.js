@@ -19,6 +19,11 @@ class MainPage extends Component {
     return (
       <>
         <Navbar />
+        <h1 id="nameH1">
+          Joseph Young
+          <br />
+          {"</>"}
+        </h1>
         <div className="parallax">
           <Header />
           <Contact />
