@@ -362,9 +362,10 @@ a {
   min-height: 500px;
 }
 .App {
-  width: 95%;
+  width: 70%;
   max-width: 100%;
-  margin: 2em auto;
+  /* margin: 2em auto; */
+  margin: auto;
 }
 p.lorem-text {
   text-align: justify;
