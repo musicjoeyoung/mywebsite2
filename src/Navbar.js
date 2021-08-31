@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "./resume.pdf";
 //import logo from "./img/logo.png";
 
 export default function Navbar() {
@@ -17,8 +18,8 @@ export default function Navbar() {
       <a href="#spanDivAbout"> About</a>
       <a href="#spanDivSkills"> Skills</a>
       <a href="#spanDivProjects"> Projects</a>
-
       <a href="#spanContactForm"> Contact</a>
+      <a href={resume}>Resume</a>
     </div>
   );
 }
